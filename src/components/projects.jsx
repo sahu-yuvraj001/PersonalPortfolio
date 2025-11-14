@@ -6,6 +6,7 @@ import p4 from './Images/p4.png'
 import p5 from './Images/p5.jpg'
 import p6 from './Images/p6.jpg'
 import p7 from './Images/p7.jpg'
+import p8 from './Images/disable2.jpg'
 
 const projects = [
   {
@@ -56,6 +57,13 @@ const projects = [
     image: p7,
     tech: ["react.js", "Tailwind", "API Integration","Html"],
     link: "https://insureamerican.netlify.app/",
+  },
+  {
+    title: "Disability Claim Assist",
+    desc: "A user-friendly platform that simplifies and streamlines the disability claims process",
+    image: p8,
+    tech: ["React", "Tailwindcss"],
+    link: "https://disabilitycare.netlify.app/",
   },
 ];
 

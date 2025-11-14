@@ -1,17 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaJs, FaGitAlt, FaFigma } from "react-icons/fa";
+import { DiMongodb ,DiBootstrap } from "react-icons/di";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-5xl" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-5xl" /> },
-  { name: "JavaScript", icon: <FaJs className="text-yellow-400 text-5xl" /> },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-500 text-5xl" /> },
+  { name: "Bootstrap", icon: <DiBootstrap className="text-purple-500 text-5xl" /> },
   { name: "React", icon: <FaReact className="text-sky-400 text-5xl" /> },
   { name: "Tailwind", icon: <SiTailwindcss className="text-cyan-400 text-5xl" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-blue-600 text-5xl" /> },
-  { name: "Git", icon: <FaGitAlt className="text-orange-600 text-5xl" /> },
-  { name: "Figma", icon: <FaFigma className="text-pink-500 text-5xl" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-5xl" /> },
+  { name: "Git", icon: <FaGitAlt className="text-orange-500 text-5xl" /> },
+  { name: "MongoDb", icon: <DiMongodb className="text-green-500 text-5xl" /> },
 ];
 
 export default function Skills() {
