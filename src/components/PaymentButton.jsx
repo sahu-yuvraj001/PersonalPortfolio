@@ -14,7 +14,7 @@ export default function PaymentButton() {
     try {
       // 1️⃣ Create order from backend
       const { data } = await axios.post(`${BACKEND_URL}/create-order`, {
-        amount: 1, // amount in INR
+        amount: 10, // amount in INR
       });
 
       // 2️⃣ Razorpay options
