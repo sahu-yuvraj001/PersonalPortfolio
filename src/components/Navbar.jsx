@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import PaymentButton from "./PaymentButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -37,10 +38,11 @@ export default function Navbar() {
           <a
             href="/Resume.pdf"
             download
-            className="ml-6 inline-flex items-center rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white border border-indigo-500 hover:bg-white hover:text-indigo-500 transition"
+            className="ml-6 inline-flex items-center rounded-full bg-indigo-500 px-8 py-2 text-sm font-semibold text-white border border-indigo-500 hover:bg-white hover:text-indigo-500 transition"
           >
-            Resume
+           Download Resume
           </a>
+          <PaymentButton/>
         </nav>
 
         <button
