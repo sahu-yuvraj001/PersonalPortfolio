@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -14,12 +13,11 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <Link
-  to="/"
-  className="text-2xl font-bold tracking-tight text-indigo-500 hover:text-indigo-600 transition-colors"
->
-  MyPortfolio
-</Link>
-
+          to="/"
+          className="text-2xl font-bold tracking-tight text-indigo-500 hover:text-indigo-600 transition-colors"
+        >
+          MyPortfolio
+        </Link>
 
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
           {navLinks.map((link) => (
@@ -36,6 +34,13 @@ export default function Navbar() {
               {link}
             </a>
           ))}
+          <a
+            href="/Resume.pdf"
+            download
+            className="ml-6 inline-flex items-center rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white border border-indigo-500 hover:bg-white hover:text-indigo-500 transition"
+          >
+            Resume
+          </a>
         </nav>
 
         <button
@@ -58,6 +63,14 @@ export default function Navbar() {
               {link}
             </a>
           ))}
+          <a
+            href="/Resume.pdf"
+            download
+            className="block text-center rounded-md bg-indigo-500 w-40 py-2 font-semibold text-white border border-indigo-500 hover:bg-white hover:text-indigo-500 transition"
+            onClick={() => setOpen(false)}
+          >
+            Download Resume
+          </a>
         </div>
       )}
     </header>

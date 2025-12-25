@@ -5,55 +5,55 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 py-16 bg-gray-50"
+      className="py-16 px-4 sm:px-6 md:px-20 bg-gray-50 min-h-screen flex flex-col items-center justify-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-indigo-600 mb-10"
+        className="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mb-10"
       >
         Get in Touch
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 gap-10 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
         {/* Contact Info */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white p-8 rounded-2xl shadow-lg flex flex-col justify-between"
+          className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg flex flex-col justify-between"
         >
           <div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
               Let’s Connect
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 text-sm sm:text-base">
               I’m always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision.
             </p>
 
-            <div className="flex items-center gap-3 mb-4">
-              <FaMapMarkerAlt className="text-indigo-500 text-xl" />
+            <div className="flex items-center gap-3 mb-4 text-sm sm:text-base">
+              <FaMapMarkerAlt className="text-indigo-500 text-xl sm:text-2xl" />
               <span className="text-gray-700">Surat, Gujarat, India</span>
             </div>
 
-            <div className="flex flex-col gap-3 mt-4">
+            <div className="flex flex-col gap-3 mt-4 text-sm sm:text-base">
               <a
                 href="https://wa.me/918849926163?text=Hi%20Yuvraj,%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-indigo-500 hover:text-indigo-600 transition"
               >
-                <FaWhatsapp className="text-2xl" />
+                <FaWhatsapp className="text-2xl sm:text-3xl" />
                 <span>Chat on WhatsApp</span>
               </a>
 
               <a
-                href="mailto:yuvrajsahu@example.com"
+                href="mailto:sahu.yuvraj001@gmail.com"
                 className="flex items-center gap-2 text-indigo-500 hover:text-indigo-600 transition"
               >
-                <FaEnvelope className="text-2xl" />
+                <FaEnvelope className="text-2xl sm:text-3xl" />
                 <span>sahu.yuvraj001@gmail.com</span>
               </a>
             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="overflow-hidden rounded-2xl shadow-lg h-[400px]"
+          className="overflow-hidden rounded-2xl shadow-lg h-64 sm:h-80 md:h-[400px]"
         >
           <iframe
             title="Surat Location"
