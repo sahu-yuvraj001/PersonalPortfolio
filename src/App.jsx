@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
             <Contact />
           </div>
         </main>
+        <Testimonial/>
         <Footer />
       </div>
     </>
