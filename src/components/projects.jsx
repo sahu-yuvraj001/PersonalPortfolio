@@ -7,7 +7,8 @@ import p5 from './Images/p5.jpg';
 import p6 from './Images/p6.jpg';
 import p7 from './Images/p7.jpg';
 import p8 from './Images/disable2.jpg';
-import p9 from './Images/p9.webp';
+import p9 from './Images/p9.avif';
+import p10 from './Images/p9.webp';
 
 const projects = [
   {
@@ -76,7 +77,7 @@ const projects = [
   {
   title: "CaronPhone - Car Rental & Dealing Platform",
   desc: "A modern car rental and vehicle dealing platform that allows users to explore, compare, and book cars seamlessly. Built with a clean UI, fast performance, and optimized user experience for smooth browsing and transactions.",
-  image:p9, // (update this with your actual image variable)
+  image:p10, // (update this with your actual image variable)
   tech: ["Next.js", "TailwindCSS"],
   link: "https://caronphone.com/"
 }
